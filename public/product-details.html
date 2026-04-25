@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1>Smart Retail AI</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="order-history.html">Track Order</a>
+      <a href="login.html">Admin</a>
+      <button class="theme-toggle btn" type="button">🌙 Dark Mode</button>
+    </div>
+  </nav>
+
+  <section class="hero" style="padding:40px 20px;">
+    <h2>Product Details</h2>
+  </section>
+
+  <section id="productDetailsContainer" class="details-container"></section>
+
+  <section class="recommend-section">
+    <h2>You may also like</h2>
+    <div id="recommendationContainer" class="product-grid"></div>
+  </section>
+
+  <script type="module" src="js/recommendations.js"></script>
+  <script src="js/theme.js"></script>
+</body>
+</html>

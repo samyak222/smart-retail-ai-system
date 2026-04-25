@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="../css/admin.css" />
+</head>
+<body>
+  <div class="admin-topbar">
+    <div>
+      <strong>Admin:</strong> <span id="adminEmail">Loading...</span>
+    </div>
+    <div>
+      <button class="theme-toggle" type="button">🌙 Dark Mode</button>
+      <button id="logoutBtn">Logout</button>
+    </div>
+  </div>
+
+  <div class="dashboard">
+    <h1>Admin Dashboard</h1>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Total Products</h3>
+        <p id="totalProducts">0</p>
+      </div>
+
+      <div class="card">
+        <h3>Total Orders</h3>
+        <p id="totalOrders">0</p>
+      </div>
+
+      <div class="card">
+        <h3>Total Revenue</h3>
+        <p id="totalRevenue">₹0</p>
+      </div>
+
+      <div class="card">
+        <h3>Low Stock Products</h3>
+        <p id="lowStockCount">0</p>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Most Sold Product</h3>
+        <p id="mostSoldProduct">Loading...</p>
+      </div>
+
+      <div class="card">
+        <h3>Top 3 Best Sellers</h3>
+        <ul id="topProductsList"></ul>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="card">
+      <h3>Low Stock Product List</h3>
+      <ul id="lowStockList"></ul>
+    </div>
+
+    <br>
+
+    <div class="card">
+      <h3>Sales Insight Summary</h3>
+      <p id="insightSummary">Loading insights...</p>
+    </div>
+
+    <br>
+    
+    <div class="cards">
+      <div class="card">
+        <h3>Top Selling Products Chart</h3>
+        <canvas id="salesChart"></canvas>
+      </div>
+
+      <div class="card">
+        <h3>Stock Overview Chart</h3>
+        <canvas id="stockChart"></canvas>
+      </div>
+    </div>
+
+    <br>
+    <a href="add-product.html">Add Product</a> |
+    <a href="products.html">Manage Products</a> |
+    <a href="orders.html">View Orders</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module" src="../js/admin.js?v=22"></script>
+  <script type="module" src="../js/admin-auth.js?v=2"></script>
+  <script src="../js/theme.js"></script>
+</body>
+</html>

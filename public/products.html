@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1>Smart Retail AI</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="order-history.html">Track Order</a>
+      <a href="login.html">Admin</a>      
+      <button class="theme-toggle btn" type="button">🌙 Dark Mode</button>
+    </div>
+  </nav>
+
+ <section class="hero" style="padding:40px 20px;">
+  <h2>All Products</h2>
+  <input type="text" id="searchInput" placeholder="Search products..." />
+  <p id="searchMsg"></p>
+  <div id="suggestionBox"></div>
+ </section>
+
+ <section id="productContainer" class="product-grid"></section>
+
+  <script type="module" src="js/products.js"></script>
+  <script src="js/theme.js"></script>
+</body>
+</html>

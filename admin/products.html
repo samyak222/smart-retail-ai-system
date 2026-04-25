@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manage Products</title>
+  <link rel="stylesheet" href="../css/admin.css" />
+</head>
+<body>
+  <div class="admin-topbar">
+    <div>
+      <strong>Admin:</strong> <span id="adminEmail">Loading...</span>
+    </div>
+    <div>
+      <button class="theme-toggle" type="button">🌙 Dark Mode</button>
+      <button id="logoutBtn">Logout</button>
+    </div>
+  </div>
+
+  <div class="dashboard">
+    <h1>Manage Products</h1>
+    <div id="adminProductsContainer" class="cards"></div>
+    <br>
+    <a href="dashboard.html">Back to Dashboard</a>
+  </div>
+
+  <script type="module" src="../js/admin.js?v=21"></script>
+  <script type="module" src="../js/admin-auth.js?v=2"></script>
+  <script src="../js/theme.js"></script>
+</body>
+</html>

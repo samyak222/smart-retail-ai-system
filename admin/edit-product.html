@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Product</title>
+  <link rel="stylesheet" href="../css/admin.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <h1>Edit Product</h1>
+
+    <input type="text" id="name" placeholder="Product name" /><br><br>
+    <input type="text" id="category" placeholder="Category" /><br><br>
+    <input type="number" id="price" placeholder="Price" /><br><br>
+    <input type="number" id="stock" placeholder="Stock" /><br><br>
+    <input type="number" id="gst" placeholder="GST %" /><br><br>
+    <input type="text" id="imageUrl" placeholder="Image URL" /><br><br>
+    <textarea id="description" placeholder="Description" rows="5" cols="40"></textarea><br><br>
+    <button type="button" id="generateDescBtn">Generate AI Description</button><br><br>
+
+    <button id="updateProductBtn">Update Product</button>
+    <p id="msg"></p>
+
+    <br><br>
+    <a href="products.html">Back to Manage Products</a>
+  </div>
+
+  <div class="admin-topbar">
+  <div>
+    <strong>Admin:</strong> <span id="adminEmail">Loading...</span>
+  </div>
+  <div>
+    <button class="theme-toggle" type="button">🌙 Dark Mode</button>
+    <button id="logoutBtn">Logout</button>
+  </div>
+</div>
+
+  <script type="module" src="../js/admin.js?v=24"></script>
+  <script type="module" src="../js/admin-auth.js?v=2"></script>
+  <script src="../js/theme.js"></script>  
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Track Order</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1>Smart Retail AI</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="order-history.html">Track Order</a>
+      <a href="login.html">Admin</a>
+      <button class="theme-toggle btn" type="button">🌙 Dark Mode</button>
+    </div>
+  </nav>
+
+  <section class="hero" style="padding:40px 20px;">
+    <h2>Track Your Order</h2>
+    <p>Search by phone number or invoice number</p>
+  </section>
+
+  <div class="track-box">
+    <input type="text" id="searchOrderInput" placeholder="Enter phone number or invoice number" />
+    <button class="btn" id="searchOrderBtn">Search Order</button>
+    <p id="trackMsg"></p>
+  </div>
+
+  <div id="orderHistoryContainer" class="order-history-container"></div>
+
+  <script type="module" src="js/order-history.js"></script>
+  <script src="js/theme.js"></script>
+</body>
+</html>

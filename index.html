@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Retail AI</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1>Smart Retail AI</h1>
+    <div>
+     <a href="index.html">Home</a>
+     <a href="products.html">Products</a>
+     <a href="cart.html">Cart</a>
+     <a href="order-history.html">Track Order</a>
+     <a href="login.html">Admin</a>     
+      <button class="theme-toggle btn" type="button">🌙 Dark Mode</button>
+    </div>
+  </nav>
+
+  <section class="home-hero">
+    <div class="home-hero-text">
+      <span class="badge">AI Powered Retail Platform</span>
+      <h1>Smart Retail & E-commerce System with AI</h1>
+      <p>
+        Manage inventory, sell products online, generate invoices, track sales,
+        and use AI-based recommendations, smart search, and sales insights.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="products.html" class="btn">Shop Now</a>
+        <a href="login.html" class="btn secondary-btn">Admin Panel</a>
+      </div>
+    </div>
+
+    <div class="home-hero-card">
+      <h3>System Highlights</h3>
+      <div class="mini-stat">
+        <span>🛒 Online Orders</span>
+        <strong>Enabled</strong>
+      </div>
+      <div class="mini-stat">
+        <span>📦 Inventory Tracking</span>
+        <strong>Live</strong>
+      </div>
+      <div class="mini-stat">
+        <span>🤖 AI Features</span>
+        <strong>3 Modules</strong>
+      </div>
+      <div class="mini-stat">
+        <span>🧾 GST Invoice</span>
+        <strong>PDF Ready</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-section">
+    <h2>Core Features</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>Admin Management</h3>
+        <p>Add, edit, delete products, manage stock, update orders, and track sales.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Customer Shopping</h3>
+        <p>Browse products, view details, add to cart, checkout, and download invoices.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Inventory Control</h3>
+        <p>Stock updates automatically after each successful order placement.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Invoice PDF</h3>
+        <p>Generate and download professional order invoices in PDF format.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-section alt-section">
+    <h2>AI Features</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>Smart Recommendations</h3>
+        <p>Suggests similar products based on category and price similarity.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Smart Search</h3>
+        <p>Supports product/category search with typo suggestion for better usability.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Sales Insights</h3>
+        <p>Shows best-selling products, low stock alerts, and revenue insights.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="workflow-section">
+    <h2>How It Works</h2>
+    <div class="workflow-grid">
+      <div class="workflow-card">
+        <span>1</span>
+        <h3>Admin Adds Products</h3>
+        <p>Shop owner adds items with stock, price, category, GST, and description.</p>
+      </div>
+      <div class="workflow-card">
+        <span>2</span>
+        <h3>Customer Places Order</h3>
+        <p>Customers browse, search, add to cart, and place orders online.</p>
+      </div>
+      <div class="workflow-card">
+        <span>3</span>
+        <h3>System Updates Stock</h3>
+        <p>Stock reduces automatically and the order is stored in the database.</p>
+      </div>
+      <div class="workflow-card">
+        <span>4</span>
+        <h3>Invoice & Insights</h3>
+        <p>Invoice is generated and admin dashboard updates sales analytics.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Ready to explore the system?</h2>
+    <p>Open the product catalog or manage the full system from the admin panel.</p>
+    <div class="hero-buttons">
+      <a href="products.html" class="btn">Explore Products</a>
+      <a href="admin/dashboard.html" class="btn secondary-btn">Go to Dashboard</a>
+    </div>
+  </section>
+  <section class="feature-section">
+   <h2>Featured Products</h2>
+   <div id="featuredProductsContainer" class="product-grid"></div>
+  </section>
+
+  <section class="feature-section alt-section">
+   <h2>Best Selling Products</h2>
+   <div id="bestSellingContainer" class="product-grid"></div>
+  </section>
+
+  <script type="module" src="js/home.js"></script>
+<script src="js/theme.js"></script>
+</body>
+</html>
